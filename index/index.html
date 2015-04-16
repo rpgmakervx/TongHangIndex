@@ -1,0 +1,202 @@
+<!--          - - - - - - -
+            -               -
+           - 				 -
+          -		o		o	  -
+         -					   -
+         -					   -
+          -		---------	  -
+            -				 -
+              -				-
+                - - - -	- - 
+-->
+<html lang="zh-CN"><head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>无标题文档</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/tonghang.css" rel="stylesheet">
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+
+	$(document).ready(function(){
+
+	//首先将#back-to-top隐藏
+
+		$("#back-to-top").hide();
+	
+		//当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+	
+		$(function () {
+			$(window).scroll(function(){
+				if ($(window).scrollTop()>100){	
+					$("#back-to-top").fadeIn(1500);
+				}else{
+					$("#back-to-top").fadeOut(1500);
+				}
+			});
+		
+				//当点击跳转链接后，回到页面顶部位置
+		
+			$("#back-to-top").click(function(){	
+				$('body,html').animate({scrollTop:0},1000);	
+				return false;
+			});
+
+		});
+		$("#company").click(function(){
+			$('body,html').animate({scrollTop:$("#companyFrame").offset().top},1000);	
+			return false;
+		});
+		$("#introduce-btn").click(function(){
+			$('body,html').animate({scrollTop:$("#introduce").offset().top},1000);	
+			return false;
+		});
+		$("#quick-use").click(function(){
+			$('body,html').animate({scrollTop:$("#how-to-use").offset().top},1000);	
+			return false;
+		});
+
+	});
+
+  	</script>
+</head>
+
+<body>
+
+    <div class="container">
+    	<div id="cursor">
+        	<p id="back-to-top">
+            	<a href="#top"><span></span>回到顶部</a>
+            </p>
+        </div>
+    	<div id="head"><!--导航头 -->
+        	<div id="top"><!--导航头父div -->
+                <div id="topleft">
+                	<img id="logo" class="img-rounded" src="images/logo.png"/>
+                </div>
+                <div id="topright">
+                    <ul id="ul1">
+                        <li><a id="introduce-btn" href="index.html#introduce">产品简介</a></li>
+                        <li><a id="quick-use" href="index.html#quick-use">快速使用</a></li>
+                        <li><a id="company" href="index.html#company">关于我们</a></li>
+                    </ul>
+                </div>
+            </div><!--导航头父div -->
+        </div><!--导航头 -->
+        <a name="introduce"></a>
+        <div id="main"><!--首界面部分div -->
+        	<div id="productFrame">
+            	<div id="leftFrame">
+                	<img id="product" src="images/phone.png" />
+                </div>
+                <div id="rightFrame">
+                	<div id="content">
+                    	<h2 id="h21">如果你：</h2>
+                    	<ul id="contentlist">
+                        	<li>正在寻找<b class="notification">同一行业</b>的人</li>
+                            <li>正在为如何拓展<b class="notification">某一行业</b>的人脉关系而发愁</li>
+                            <li>正在寻找<b class="notification">某一领域</b>的人才</li>
+                            <li>想进行<b class="notification">跨行业</b>的交流</li>
+                        </ul>
+                        <h2 id="h21">没错！来找<img src="images/logo.png" id="notification"/>吧！</h2>
+                        <div id="btn">
+                        	<a class="btn" id="btnandroid" href="http://shouji.baidu.com/soft/item?docid=7654467&from=as&f=search_app_同行%40list_2_image%4010%40" target="blank"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--首界面部分div -->
+        
+        <div id="introduce"><!--产品介绍部分div -->
+        	<div class="intro-main">
+            	<div class="intro-msg0">同行能带给我们什么？</div>
+                <div id="intro1">
+                    <div class="intro-msg1">1.快捷的标签，让我们迅速找到同行业的伙伴们进行行业交流，也可与多个同行们进行群聊哦！</div>
+                    <div class="intro-img1">
+                    	<img class="intro-imgs" src="images/people.jpg"/>
+                    </div>
+                </div>
+                <div id="intro2">
+                    <div class="intro-msg2">2.跑业务，找人脉，跨行业交流，能够在短时间内发现行业商机，不容错过哦！</div>
+                    <div class="intro-img2"><img class="intro-imgs" src="images/opportunity.jpg"/></div>
+                </div>
+                <div id="intro3">
+                    <div class="intro-msg3">3.企业需要人才，人才需要伯乐。同行满足大家人才挖掘的需求，寻找你要的人才和团队。</div>
+                    <div class="intro-img3"><img class="intro-imgs" src="images/find.jpg"/></div>
+                </div>
+            </div>
+        </div><!--产品介绍部分div -->
+        
+        <div id="how-to-use"><!--快速使用 div-->
+        	<div id="use-title">
+            	<b class="intro-msg0">四步即可使用哦！</b>
+            </div>
+        	<div id="steps">   
+            		
+            	<div class="step" id="step1">
+                   	<div id="step-msg">
+                    	<div class="step-msg">
+                        	点击下载链接，一键安装。
+                        </div>
+                	</div>	
+                	<div class="number">1</div>
+                </div>
+                
+                <div class="step" id="step2">
+                    <div id="step-msg">
+                        <div class="step-msg">
+                            邮箱注册，填写完整资料
+                        </div>
+                    </div>
+                	<div class="number">2</div>
+                </div>
+                <div class="step" id="step3">
+                	<div id="step-msg">
+                        <div class="step-msg">
+                           注册完成后，记得给自己贴上行业标签哦！
+                        </div>
+                    </div>
+                	<div class="number">3</div>
+                </div>
+                <div class="step" id="step4">
+                	<div id="step-msg">
+                        <div class="step-msg longer">
+                           登陆后，即可查看与你标签相同的同行们并群聊啦！开始你的同行之旅吧！
+                        </div>
+                    </div>
+                	<div class="number">4</div>
+                </div>
+            </div>
+        </div><!--快速使用 div-->
+        
+        <div id="companyFrame"><!-- 关于我们 div-->
+        	<div id="about">
+            	<div class="companyHead">
+                	<b class="name">同行</b>科技有限公司
+                </div>
+                <div class="companyContent">
+                	我们来自五湖四海，遍布祖国东西南北，终汇聚在京津宝地；
+                </div>
+                <div class="companyContent">
+                	我们的年龄跨越70,80,90后，梦想却不分界线。
+                </div>
+                <div class="companyContent">
+                	我们力求打造最适合行业交流，能够定向的、分领域探讨话题的app。
+                </div>
+                <div class="companyContent">
+                	同行(<b style="font-family:'Comic Sans MS'">Hang</b>)，我们一路同行，雕琢最精致的产品，丰收最饱满的果实。
+                </div>
+            </div>
+        </div><!-- 关于我们 div-->
+
+        
+        <div class="foot">
+        	<div class="foot-text">Copyright © 2013 - 2015 同行科技有限公司</div>
+        </div>
+    </div>
+</body>
+	
+  	<script src="js/bootstrap.min.js"></script>
+</html>
