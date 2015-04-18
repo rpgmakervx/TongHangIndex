@@ -180,6 +180,10 @@
 		}
 		.bar{
 			height:650px;
+			
+		}
+		.circle{
+			bottom:-30px;
 		}
 		#intro-main{
 			float:left;
