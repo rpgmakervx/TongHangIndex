@@ -23,11 +23,25 @@
 	<script src="js/posfixed.js"></script>
     <script type="text/javascript">
 		$(function(){
-			
+			$("#company").click(function(){
+				$('body,html').animate({scrollTop:$("#companyFrame").offset().top},1000);	
+				return false;
+			});
+			$("#introduce-btn").click(function(){
+				$('body,html').animate({scrollTop:$("#introduce").offset().top},1000);	
+				return false;
+			});
+			$("#quick-use").click(function(){
+				$('body,html').animate({scrollTop:$("#how-to-use").offset().top},1000);	
+				return false;
+			});
+			$("#download").click(function(){
+				$('body,html').animate({scrollTop:$("#main").offset().top},1000);	
+				return false;
+			});
 			$.scrollify({
 				section: '.scroll',	
-				scrollbars: false,
-				scrollSpeed:3000,
+				scrollSpeed:1000,
 				easing: "easeOutExpo",
 				offset : 0,
 				after:function(){
@@ -35,6 +49,7 @@
 			});
 			
 		});
+		
     </script>
 </head>
 
@@ -43,19 +58,22 @@
     <div class="container">
     	<div id="head" data-section-name="page1"><!--导航头 -->
         	<div id="top"><!--导航头父div -->
+            	<div id="topleft">
+                	<img id="logo" class="img-rounded" src="images/logo.png"/>
+                </div>
                 <div id="topright">
                     <ul id="ul1">
-                    	<li class="img"><img id="logo" class="img-rounded" src="images/logo.png"/></li>
-                        <li><a id="introduce-btn" href="index2.html#introduce">产品简介</a></li>
-                        <li><a id="quick-use" href="index2.html#quick-use">快速使用</a></li>
-                        <li><a id="company" href="index2.html#company">关于我们</a></li>
+                    	<li><div class="borders"><a id="download" href="#">产品下载</a></div></li>
+                        <li><div class="borders"><a id="introduce-btn" href="#">产品简介</a></div></li>
+                        <li><div class="borders"><a id="quick-use" href="#">快速使用</a></div></li>
+                        <li><div class="borders"><a id="company" href="#">关于我们</a></div></li>
                     </ul>
                 </div>
             </div><!--导航头父div -->
         </div><!--导航头 -->
         <a name="introduce"></a>
         <div class="board">
-            <div id="main" class="scroll" data-section-name="page1"><!--首界面部分div -->
+            <div id="main" class="scroll"><!--首界面部分div -->
                 <div id="productFrame">
                     <div id="leftFrame">
                         <img id="product" src="images/phone.png" />
@@ -78,7 +96,7 @@
                 </div>
             </div><!--首界面部分div -->
             
-            <div id="introduce" class="scroll" data-section-name="page2"><!--产品介绍部分div -->
+            <div id="introduce" class="scroll" ><!--产品介绍部分div -->
                 <div id="carousel-def" class="carousel slide intro-main" data-ride="carousel">
                     <ol class="carousel-indicators circle">
                         <li data-target="#carousel-def" data-slide-to="0" class="active"></li>
@@ -87,7 +105,7 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <div class="intro-msg0">同行能带给我们什么？</div>
+                            <div class="intro-msg0">标签的设计</div>
                             <div id="intro1">
                                 <div class="intro-msg1">1.快捷的标签，让我们迅速找到同行业的伙伴们进行行业交流，也可与多个同行们进行群聊哦！</div>
                                 <div class="intro-img1">
@@ -97,14 +115,14 @@
                         </div>
                         <div class="item">
                             <div id="intro2">
-                                <div class="intro-msg0">同行能带给我们什么？</div>
+                                <div class="intro-msg0">时间==机遇</div>
                                 <div class="intro-msg2">2.跑业务，找人脉，跨行业交流，能够在短时间内发现行业商机，不容错过哦！</div>
                                 <div class="intro-img2"><img class="intro-imgs" src="images/opportunity.jpg"/></div>
                             </div>
                         </div>
                         <div class="item">
                             <div id="intro3">
-                                <div class="intro-msg0">同行能带给我们什么？</div>
+                                <div class="intro-msg0">人才的供需市场</div>
                                 <div class="intro-msg3">3.企业需要人才，人才需要伯乐。同行满足大家人才挖掘的需求，寻找你要的人才和团队。</div>
                                 <div class="intro-img3"><img class="intro-imgs" src="images/find.jpg"/></div>
                             </div>
@@ -121,7 +139,7 @@
                     </a>
                 </div>
             </div><!--产品介绍部分div -->
-            <div id="how-to-use" class="scroll" data-section-name="page3"><!--快速使用 div-->
+            <div id="how-to-use" class="scroll" ><!--快速使用 div-->
                 <div id="use-title">
                     <b class="intro-msg0 stepmsg">四步即可使用哦！</b>
                 </div>
@@ -163,7 +181,7 @@
                 </div>
             </div><!--快速使用 div-->
             
-            <div id="companyFrame" class="scroll" data-section-name="page4"><!-- 关于我们 div-->
+            <div id="companyFrame" class="scroll" ><!-- 关于我们 div-->
                 <div class="frame">
                 	<div id="about">
                         <div class="companyHead">
