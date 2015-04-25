@@ -90,6 +90,7 @@
 			padding-left:20px;
 		}
 		.container{
+			
 			width:100%;
 			height:100%;
 			padding-right:0px;
@@ -101,77 +102,106 @@
 		
 		/*头部信息*/
 		#head{
+			Z-INDEX:99999;
+			position:fixed;
+			border-left:1px #000 solid;
+			border-right:1px #000 solid;
+			border-bottom:1px #000 solid;
+			background-color:rgba(255,255,255,0.8);
+			font-weight:400;
 			width:100%;
-			height:90px;
-			background:#FFF;
+			height:69px;
 		}
 		#top{
 			width:1150px;
-			height:90px;
+			height:70px;
 		}
 		#topleft{
-			width:200px;
-			margin-top:10px;
-			margin-left:100px;
+			width:500px;
+			margin-top:15px;
+			margin-left:10px;
 			margin-bottom:10px;
 			float: left;
 		}
-		#topright{
-			float:right;
-			margin-top:35px;
-			margin-right:0px;
+		.img{
+			margin-top:0px;
 		}
 		#logo{
-			width:70px;
-			height:77px;
-			margin-top:0px;
-			float:right;
+			width:60px;
+			height:68px;
+			right:150px;
+			margin-top:-15px;
+			margin-left:200px;
+			float:left;
 			border-radius:10px;
 		}
+		.tonghang{
+			font-size:30px;
+			margin-left:30px;
+		}
 		#ul1{
+			float:right;
 			font-size: 18px;
-			padding-top: 5px;
+			padding-top: 0px;
 			list-style:none;
 			padding-top:0px;
+			margin-right:-50px;
+			
 		}
 		#ul1 li{
 			padding-bottom:5px;
+			
+			margin-top:18px;
 			float:left;
 			text-decoration: none;
 			padding-left:25px;
 			padding-right:15px;
 		}
+		#ul1 li a{
+			color:#935124;
+		}
 		#ul1 li a:hover{
-			color:#1f7fff;
+			color:#000;
 			cursor:pointer;
-			float:left;
 			text-decoration: none; 
+			border-bottom:4px #000 solid;
+		}
+		.borders{
+			height:35px;
+			
 		}
 		/*头部信息*/
-		
+		#board{
+			width:100%;
+			height:100%;
+			margin-top:0px;}
 		/*主信息模块*/
 		#main{
+			Z-INDEX:0;
 			width:100%;
-			height:580px;
-			background:#33d0af;
+			height:650px;
+			margin-top:-25px;
+			background-color:rgba(85,204,255,1);
 		}
+		
 		#productFrame{
 			width:1345px;
 			height:500px;
 			margin-left:0px;
-			margin-top:0px;
+			margin-top:20px;
 		}
 		#leftFrame{
 			float:left;
 			height:450px;
 			width:350px;
 			margin-bottom:0px;
+			margin-top:50px;
 			margin-left:-120px;
 			position:relative;
 		}
 		#product{
-			margin-top:70px;
-			margin-left:0px;
+			margin-top:75px;
+			margin-left:300px;;
 			width:280px;
 			height:500px;
 		}
@@ -179,14 +209,14 @@
 			float:right;
 			width:450px;
 			height:450px;
-			margin-top:50px;
+			margin-top:20px;
 			margin-right:150px;
 			position:relative;
 		}
 		#content{
 			width:450px;
 			height:400px;
-			margin-top:65px;
+			margin-top:115px;
 			margin-left:-100px;
 			position:relative;
 		}
@@ -232,11 +262,19 @@
 		
 		/*产品介绍模块*/
 		#introduce{
+			Z-INDEX:0;
 			position:relative;
 			margin-top:0px;
 			width:100%;
-			height:1500px;
-			background-color:#897CFA;
+			height:1650px;
+			background-color:rgba(61,158,211,1);
+		}
+		.bar{
+			height:650px;
+			
+		}
+		.circle{
+			bottom:-30px;
 		}
 		#intro-main{
 			float:left;
@@ -269,7 +307,7 @@
 			color:#000;
 			font-style:
 			text-align:center;
-			padding-top:50px;
+			padding-top:70px;
 			margin-left:580px;
 			font-weight:bold;
 		}
@@ -284,7 +322,7 @@
 		}
 		.intro-img1{
 			float:right;
-			margin-right:300px;
+			margin-right:230px;
 			margin-top:55px;
 			width:450px;
 			height:400px;
@@ -300,7 +338,7 @@
 		}
 		.intro-img2{
 			float:right;
-			margin-right:300px;
+			margin-right:230px;
 			margin-top:55px;
 			width:450px;
 			height:400px;
@@ -316,7 +354,7 @@
 		}
 		.intro-img3{
 			float:right;
-			margin-right:300px;
+			margin-right:230px;
 			margin-top:55px;
 			width:450px;
 			height:400px;
@@ -334,13 +372,18 @@
 			position:relative;
 			margin-top:0px;
 			width:100%;
+			height:600px;
+			
+		}
+		.frame{
+			width:100%;
 			height:650px;
-			background-color:#FDB42B;
+			background-color:rgba(20,115,250,1)
 		}
 		#about{
 			border-radius: 20px;
 			float:left;
-			margin-top:50px;
+			margin-top:70px;
 			margin-left:350px;
 			width:600px;
 			height:380px;
@@ -365,9 +408,17 @@
 		/*关于我们模块*/
 		/*快速使用指南*/
 		#how-to-use{
+			Z-INDEX:0;
 			width:100%;
 			height:650px;
-			background-color:#1e7eef
+			background-color:rgba(37,145,225,1);
+		}
+		#use-title{
+			width:100%;
+			height:150px;
+		}
+		.stepmsg{
+			top:65px;
 		}
 		
 		#steps{
@@ -396,21 +447,21 @@
 		#step1{
 			position:relative;
 			margin-left:250px;
-			margin-top:125px;
+			margin-top:105px;
 		}
 		#step2{
 			position:relative;
-			margin-left:480px;
+			margin-left:450px;
 			margin-top:145px;
 		}
 		#step3{
 			position:relative;
-			margin-left:710px;
+			margin-left:690px;
 			margin-top:-220px;
 		}
 		#step4{
 			position:relative;
-			margin-left:980px;
+			margin-left:970px;
 			margin-top:125px;
 		}
 		#step-msg{
@@ -436,13 +487,19 @@
 		}
 		/*快速使用指南*/
 		.foot{
+			position:relative;
 			width:100%;
 			height:45px;
+			margin-left:-580px;
+			bottom:10px;
 			text-align:center;
 			
 		}
 		.foot-text{
-			margin-top:20px;
+			position:relative;
+			Z-INDEX:0;
 			font-size:14px;
-			color:#A9AD9E;
+			color:#FFF;
+			text-align:center;
+			float:right;
 		}
