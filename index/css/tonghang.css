@@ -104,9 +104,7 @@
 		#head{
 			Z-INDEX:99999;
 			position:fixed;
-			border-left:1px #000 solid;
-			border-right:1px #000 solid;
-			border-bottom:1px #000 solid;
+			box-shadow:1px 1px 6px #333;
 			background-color:rgba(255,255,255,0.8);
 			font-weight:400;
 			width:100%;
