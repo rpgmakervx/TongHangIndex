@@ -190,18 +190,35 @@
 		}
 		#leftFrame{
 			float:left;
-			height:450px;
+			height:500px;
 			width:350px;
 			margin-bottom:0px;
-			margin-top:50px;
-			margin-left:-120px;
+			margin-top:100px;
+			margin-left:120px;
 			position:relative;
+			background:url("../images/phone.png") no-repeat;
 		}
-		#product{
-			margin-top:75px;
-			margin-left:300px;;
-			width:280px;
-			height:500px;
+		#carousel-def{
+			margin-left:72px;
+			margin-top:55px;
+			width:195px;
+			height:300px;
+		}
+		.carousel-inner{
+			width:192px;
+			height:335px;
+		}
+		.item{
+			margin-top:0px;
+			width:190px;
+			height:300px;
+		}
+		.product{
+			border-radius:5px;
+			margin-top:0px;
+			margin-left:0px;;
+			width:190px;
+			height:300px;
 		}
 		#rightFrame{
 			float:right;
