@@ -61,7 +61,7 @@
 	
 			width:80px;
 	
-			background:#d1d1d1 url(../images/arrow-up.png) no-repeat center center;
+			background:#d1d1d1 url(../img/arrow-up.png) no-repeat center center;
 	
 			margin-bottom:5px;
 	
@@ -75,7 +75,7 @@
 	
 		#back-to-top a:hover span{
 	
-			background:#979797 url(../images/arrow-up.png) no-repeat center center;
+			background:#979797 url(../img/arrow-up.png) no-repeat center center;
 	
 		}
 		/*回到顶部的相关设置*/
@@ -164,6 +164,16 @@
 			text-decoration: none; 
 			border-bottom:4px #000 solid;
 		}
+		.mark{
+			height:0px;
+			width:100%;
+			background-color:rgba(85,204,255,1);
+		}
+		#mark{
+			margin-right:0px;
+			float:right;
+			
+		}
 		.borders{
 			height:35px;
 			
@@ -196,7 +206,7 @@
 			margin-top:100px;
 			margin-left:120px;
 			position:relative;
-			background:url("../images/phone.png") no-repeat;
+			background:url("../img/phone.png") no-repeat;
 		}
 		#carousel-def{
 			margin-left:72px;
@@ -267,7 +277,7 @@
 			width:200px;
 			height:45px;
 			margin-left:15px;
-			background:url("../images/bt_android.png") no-repeat;
+			background:url("../img/bt_android.png") no-repeat;
 		}
 		#btn{
 			width:100px;
@@ -387,13 +397,14 @@
 			position:relative;
 			margin-top:0px;
 			width:100%;
-			height:600px;
-			
+			height:500px;
+			box-shadow:10px 10px 6px #666;
 		}
 		.frame{
 			width:100%;
-			height:650px;
-			background-color:rgba(20,115,250,1)
+			height:500px;
+			background-color:rgba(20,115,250,1);
+			box-shadow:10px 10px 6px #666;
 		}
 		#about{
 			border-radius: 20px;
@@ -407,7 +418,7 @@
 		}
 		.companyHead{
 			margin-left:25px;
-			margin-top:35px;
+			margin-top:20px;
 			font-size:30px;
 			font-weight:bold;
 		}
@@ -501,20 +512,29 @@
 			color:#FFF;
 		}
 		/*快速使用指南*/
-		.foot{
+		.ICP{
+			Z-INDEX:99999;
 			position:relative;
 			width:100%;
-			height:45px;
-			margin-left:-580px;
-			bottom:10px;
-			text-align:center;
+			height:75px;
+			background-color:rgba(255,255,255,1);
+		}
+		.foot{
+			Z-INDEX:99999;
+			position:relative;
+			width:100%;
+			height:105px;
+			margin-left:0px;
+			background-color:rgba(255,255,255,1);
 			
 		}
 		.foot-text{
 			position:relative;
-			Z-INDEX:0;
+			Z-INDEX:99999;
 			font-size:14px;
-			color:#FFF;
+			color:#000;
+			width:100%;
 			text-align:center;
 			float:right;
+			margin-top:25PX;
 		}
